@@ -144,15 +144,10 @@ const AgentDetail = () => {
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
                     <Zap className="w-5 h-5 text-primary" />
-                    About This Agent
+                    Key Capabilities
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground leading-relaxed mb-6">
-                    {agent.longDescription}
-                  </p>
-
-                  <h4 className="font-semibold mb-3">Key Capabilities:</h4>
                   <ul className="space-y-2">
                     {agent.capabilities?.map((capability, index) => (
                       <li key={index} className="text-sm text-muted-foreground flex items-start gap-2">

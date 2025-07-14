@@ -131,7 +131,8 @@ const Index = () => {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="text-center mb-16"
           >
-            <motion.div
+            {/* SPARKLE FLOATING CLOUD MESSAGE */}
+            {/* <motion.div
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.2 }}
@@ -139,9 +140,9 @@ const Index = () => {
             >
               <Sparkles className="w-4 h-4 text-primary" />
               <span className="text-sm font-medium text-primary">Powered by Advanced AI</span>
-            </motion.div>
+            </motion.div> */}
 
-            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+            <h1 className="text-4xl sm:text-6xl lg:pt-10 lg:text-7xl font-bold mb-6 leading-tight">
               <span className="text-gradient">AI Agents</span>
               <br />
               <span className="text-foreground">That Transform</span>
@@ -150,7 +151,7 @@ const Index = () => {
             </h1>
 
             <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
-              Discover our collection of intelligent AI agents designed to automate, optimize, and enhance your productivity across various domains.
+              Kickstart your experiential learning journey by exploring and test-driving our library of intelligent Agents—powered by cutting-edge foundation models and pre-trained LLMs.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -159,7 +160,7 @@ const Index = () => {
                 size="lg" 
                 className="gradient-primary text-white font-semibold px-8 py-3 rounded-full hover:scale-105 transition-all duration-300 glow-primary"
               >
-                Explore Agents
+                Explore Agents Library
                 <ArrowDown className="ml-2 w-5 h-5" />
               </Button>
               {/* <Button 
@@ -173,7 +174,7 @@ const Index = () => {
           </motion.div>
 
           {/* Features Grid */}
-          <motion.div
+          {/* <motion.div
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"
@@ -212,7 +213,7 @@ const Index = () => {
                 </motion.div>
               );
             })}
-          </motion.div>
+          </motion.div> */}
         </div>
       </section>
 
@@ -220,7 +221,7 @@ const Index = () => {
       {/* <StatsSection /> */}
 
       {/* AI Agents Showcase */}
-      <section ref={agentsRef} className="py-20 px-4 sm:px-6 lg:px-8 relative">
+      <section ref={agentsRef} className="py-10 px-4 sm:px-6 lg:px-8 relative">
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}

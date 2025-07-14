@@ -52,7 +52,7 @@ const Navigation = () => {
                 />
                 </div>
             </div>
-            <span className="text-xl font-bold text-gradient">Kloudstac's Agentic Hub</span>
+            <span className="text-xl font-bold text-gradient">Kloudstac's Agentic AI Hub</span>
           </div>
 
           {/* Desktop Navigation */}
