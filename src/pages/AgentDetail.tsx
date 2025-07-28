@@ -23,6 +23,8 @@ const getAgentById = (id: string) => {
 const AgentDetail = () => {
   const { id } = useParams();
   const [message, setMessage] = useState('');
+  const [showIframe, setShowIframe] = useState(false);
+
   const [chatMessages, setChatMessages] = useState([
     {
       role: 'agent',
@@ -275,6 +277,37 @@ const AgentDetail = () => {
               </Card>
             </motion.div> */}
           </div>
+          {/* <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="mb-16"
+          > */}
+
+          <div>
+          </div>
+          {/* </motion.div> */}
+        </div>
+        <div className="w-full min-h-[50px] flex items-center justify-center p-4">
+          {!showIframe ? (
+            <Button
+              onClick={() => setShowIframe(true)}
+              className="px-8 py-4 text-lg font-semibold text-white rounded-xl shadow-md scale-100 hover:scale-105 transition-transform duration-300"
+              style={{
+                background: 'linear-gradient(to right, #58ba48, #6ad85c)',
+              }}
+            >
+              Launch Agent
+            </Button>
+          ) : (
+            <Card style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)', backdropFilter: 'blur(10px)' }} className="w-full border border-border/50 shadow-lg rounded-2xl">
+              <CardContent className='w-full'>
+                <div className="w-full h-[650px] overflow-hidden relative">
+                  <iframe src={agent.url && agent.url} className="w-full h-full border-0" />
+                </div>
+              </CardContent>
+            </Card>
+          )}
         </div>
       </div>
     </div>

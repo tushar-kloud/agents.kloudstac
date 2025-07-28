@@ -51,6 +51,7 @@ export const agentsData = [
     description: "Automates invoice creation from purchase orders and streamlines reconciliation processes, supporting accounting teams across the entire finance cycle.",
     category: "Accounting",
     status: "Coming Soon",
+    url: "https://master.d327pty55h917v.amplifyapp.com",
     longDescription: "The accounting copilot brings automation to core finance operations like invoice creation, PO matching, and account reconciliation. It reduces manual data entry, catches mismatches early, and ensures faster month-end closes, helping teams operate with precision and agility.",
     capabilities: [
       "Create invoices automatically from purchase orders",
@@ -73,6 +74,7 @@ export const agentsData = [
     description: "Helps users quickly discover product details, resolve support queries, and access real-time information using a contextual and searchable AI agent.",
     category: "Product Discovery",
     status: "Coming Soon",
+    url: "https://main.d13455ryyqm07k.amplifyapp.com",
     longDescription: "The product discovery copilot helps users quickly locate information about products, components, and technical documentation. It reduces support load by resolving queries instantly through contextual understanding and intelligent search across product data and manuals.",
     capabilities: [
       "Search across product catalogs and tech documentation",
@@ -116,6 +118,7 @@ export const agentsData = [
     description: "Supports internal audit teams by analyzing data in real-time, flagging anomalies, and ensuring compliance for faster and smarter audits.",
     category: "Auditing",
     status: "Coming Soon",
+    url: "https://master.d31ln2qvo3vrnd.amplifyapp.com",
     longDescription: "The audit copilot accelerates internal audits by analyzing large volumes of transactional data in real time, identifying anomalies, and ensuring regulatory compliance. It reduces manual workload, flags risks early, and increases audit coverage with greater efficiency.",
     capabilities: [
       "Scan financial records to detect anomalies and inconsistencies",
